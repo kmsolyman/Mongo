@@ -17,7 +17,6 @@ app.use(cors());
 app.use(express.json());
 // db connection
 
-mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://kmsolyman:solyman@cluster0.7wpalig.mongodb.net/token?retryWrites=true&w=majority`);
 
 mongoose
   .connect("mongodb+srv://kmsolyman:solyman@cluster0.7wpalig.mongodb.net/token?retryWrites=true&w=majority")
