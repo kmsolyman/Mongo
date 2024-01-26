@@ -1,11 +1,12 @@
 const express = require("express");
 const { default: mongoose } = require("mongoose");
 const app = express();
-const PORT = 5000;
 const cors = require("cors");
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+
+const PORT = process.env.PORT || 5000;
 
 
 
